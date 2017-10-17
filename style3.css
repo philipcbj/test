@@ -1,0 +1,132 @@
+body{
+    margin: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+        "heading heading heading heading heading"
+        "main1 main1 main1 main1 informasjon"
+        "main2 main2 main2 main2 informasjon"
+        "main3 main3 main3 main3 informasjon"
+        "overskriftressurs overskriftressurs overskriftressurs overskriftressurs informasjon"
+        "ressurs ressurs ressurs2 ressurs2 informasjon"
+        "bunn bunn bunn bunn bunn";
+}
+header{
+    grid-area: heading;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #e74c3c;
+}
+.artikler{
+    height:150px;
+}
+.artikkel1{
+    grid-area: main1;
+    background: #eee;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.artikkel2{
+    grid-area: main2;
+    text-align: right;
+    background: #3498db;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+.artikkel3 {
+    grid-area: main3;
+    background: #eee;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#info{
+    grid-area: informasjon;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #333;
+    color: #eee;
+}
+#ressurser1{
+    grid-area: ressurs;
+    /*background-color: #eee;;*/
+    height:200px;
+    text-align: center;
+    border-left: 7px solid #333;
+}
+#ressurser2{
+    grid-area: ressurs2;
+    /*background-color: #333;*/
+    height:200px;
+    text-align: center;
+}
+footer{
+    grid-area: bunn;
+    background-color: #e74c3c;
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+table{
+    margin: auto;
+}
+#timeplan{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.8em;
+    border-top: 2px solid black;
+}
+.infprog{
+    background-color: #e74c3c;
+}
+.webutv{
+    background-color: #3498db;
+}
+p, th, td, a{
+    font-family: 'Roboto', sans-serif;
+}
+#overskriftRessurs{
+    grid-area: overskriftressurs;
+    text-align: center;
+    color: #2980b9;    
+}
+.artikkel{
+    max-width: 900px;
+    color: #333;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 4px 6px 1px rgba(50, 60, 60, 0.20);
+}
+
+.ord1{
+    background-color: #eee;
+    font-style: italic;
+}
+.bildeartikkel{
+    width: 100%;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    word-spacing: 0.2em;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
